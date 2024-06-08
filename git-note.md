@@ -151,7 +151,11 @@ SSH 协议连接，配置了公钥后，可以免密码推送。
    - [为什么当我尝试在vscode中提交时，COMMIT_EDITMSG会打开？-腾讯云开发者社区-腾讯云 (tencent.com)](https://cloud.tencent.com/developer/ask/sof/107109436)
    - [git commit命令的使用与git默认编辑器的修改_git: use editor as commit input-CSDN博客](https://blog.csdn.net/longxiaowu/article/details/24017181)
    - 退出 vim 编辑器：[退出 .git/COMMIT_EDITMSG_git commit editmsg-CSDN博客](https://blog.csdn.net/qq_42770949/article/details/104974965)
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> bugFix
 4. 输入 `ssh -T git@github.com` 后显示 `git@ip地址: Permission denied (publickey).`
 
    回答：原因可能有：
@@ -257,10 +261,16 @@ SSH 协议连接，配置了公钥后，可以免密码推送。
      设置记事本为编辑器：
 
      ```bash
-     
+  $ git config --global core.editor "'C:\WINDOWS\system32\notepad.exe'"
      ```
-
      
 
-   
 
+7. 在其他分支上修改了代码，但想切换到目标分支，被提示要 commit 当前代码，如何处理？
+
+   用 `git stash` 暂存当前代码。
+
+   【参考】
+
+   - [git Stash详细介绍：git stash和git pop的详细用法 - 李帆同学 - 博客园 (cnblogs.com)](https://www.cnblogs.com/lifan-fineDay/p/16960584.html)
+   - 冲突时的处理：[git stash和git stash pop-CSDN博客](https://blog.csdn.net/qq_36898043/article/details/79431168)
