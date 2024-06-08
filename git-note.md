@@ -15,4 +15,12 @@
 
    【参考】[git branch不显示本地分支的问题（二）_git branch -a没反应-CSDN博客](https://blog.csdn.net/qq_39671159/article/details/81261049)
 
-   
+2. 输入 `git commit` 后回车，为什么会打开 `COMMIT_EDITMSG` 文件？
+
+   回答： git 的设置，该文件用来保存本次 commit 的信息、说明，等同于执行 `git commit -m`。打开 `COMMIT_EDITMSG` 的软件由 git 的 config 文件中的 `core.editor` 指定。
+
+   【参考】
+
+   - [为什么当我尝试在vscode中提交时，COMMIT_EDITMSG会打开？-腾讯云开发者社区-腾讯云 (tencent.com)](https://cloud.tencent.com/developer/ask/sof/107109436)
+   - [git commit命令的使用与git默认编辑器的修改_git: use editor as commit input-CSDN博客](https://blog.csdn.net/longxiaowu/article/details/24017181)
+   - 退出 vim 编辑器：[退出 .git/COMMIT_EDITMSG_git commit editmsg-CSDN博客](https://blog.csdn.net/qq_42770949/article/details/104974965)
