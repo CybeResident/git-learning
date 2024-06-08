@@ -27,6 +27,31 @@
 - 官方文档：[Git - git-log Documentation](https://git.github.io/git-scm.com/docs/git-log/zh_HANS-CN)
 - [git log 使用及格式化参数详解_git log format-CSDN博客](https://blog.csdn.net/u011106915/article/details/105836289)
 
+### 图
+
+`--graph` 选项**绘制一个 ASCII 图**，表示提交历史记录的分支结构。它通常与 `--oneline` 和 `--decorate` 命令结合使用，以便更容易查看哪个提交属于哪个分支：
+
+```css
+git log --graph --oneline --decorate
+```
+
+对于一个只有 2 个分支的简单存储库，这将产生以下结果：
+
+```js
+*   0e25143 (HEAD, main) Merge branch 'feature'
+|\  
+| * 16b36c6 Fix a bug in the new feature
+| * 23ad9ad Start a new feature
+* | ad8621a Fix a critical security issue
+|/  
+* 400e4b7 Fix typos in the documentation
+* 160e224 Add the initial code base
+```
+
+星号显示提交在哪个分支上，因此上图告诉我们 `23ad9ad` 和 `16b36c6` 提交位于主题分支上，其余的都在 `main` 分支上。
+
+虽然对于简单的存储库来说，这是一个不错的选择，但对于分支较多的项目，最好使用功能更全的可视化工具，比如 `gitk` 或 [Sourcetree](https://www.atlassian.com/zh/software/sourcetree)。
+
 # 其他
 
 ## 操作本地仓库
