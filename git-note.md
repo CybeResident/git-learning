@@ -26,6 +26,7 @@
 
 - 官方文档：[Git - git-log Documentation](https://git.github.io/git-scm.com/docs/git-log/zh_HANS-CN)
 - [git log 使用及格式化参数详解_git log format-CSDN博客](https://blog.csdn.net/u011106915/article/details/105836289)
+- [高级 Git 日志 | Atlassian Git Tutorial](https://www.atlassian.com/zh/git/tutorials/git-log)
 
 ### 图
 
@@ -56,7 +57,9 @@ git log --graph --oneline --decorate
 
 ## 操作本地仓库
 
-【参考】[git教程1--如何操作本地仓库（保姆级教程，好上手）_gitlab-ce 本地仓库操作-CSDN博客](https://blog.csdn.net/TroyeSivanlp/article/details/121172010)
+【参考】
+
+- [git教程1--如何操作本地仓库（保姆级教程，好上手）_gitlab-ce 本地仓库操作-CSDN博客](https://blog.csdn.net/TroyeSivanlp/article/details/121172010)
 
 # 问题
 
