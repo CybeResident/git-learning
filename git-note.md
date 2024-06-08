@@ -228,5 +228,24 @@ SSH 协议连接，配置了公钥后，可以免密码推送。
 
    【参考】[关联文本编辑器与 Git - GitHub 文档](https://docs.github.com/zh/get-started/getting-started-with-git/associating-text-editors-with-git)
 
-   **【注意】**如果手动修改 `.gitconfig` 文件，git 会报错，提示 `fatal: bad config line 2 in file C:/Users/WYH/.gitconfig`
+   **【注意】**
+
+   - 如果手动修改 `.gitconfig` 文件，git 会报错，提示 `fatal: bad config line 2 in file C:/Users/WYH/.gitconfig`
+
+   - 如果按照官网，设置 `core.editor "code --wait"`，则会打开旧版本的 VSCode：
+
+     ```
+     Version: 1.32.3 (system setup)
+     Commit: a3db5be9b5c6ba46bb7555ec5d60178ecc2eaae4
+     Date: 2019-03-14T22:49:40.955Z
+     Electron: 3.1.6
+     Chrome: 66.0.3359.181
+     Node.js: 10.2.0
+     V8: 6.6.346.32
+     OS: Windows_NT ia32 10.0.19045
+     ```
+
+     
+
+   
 
