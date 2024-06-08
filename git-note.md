@@ -226,13 +226,16 @@ SSH 协议连接，配置了公钥后，可以免密码推送。
 
 6. 关联文本编辑器与 Git
 
-   【参考】[关联文本编辑器与 Git - GitHub 文档](https://docs.github.com/zh/get-started/getting-started-with-git/associating-text-editors-with-git)
+   【参考】
+
+   - 官方：[关联文本编辑器与 Git - GitHub 文档](https://docs.github.com/zh/get-started/getting-started-with-git/associating-text-editors-with-git)
+   - [使用VSCode作为GIT默认编辑器_git 编辑时打开vscode-CSDN博客](https://blog.csdn.net/weixin_44225025/article/details/111410476)
 
    **【注意】**
 
    - 如果手动修改 `.gitconfig` 文件，git 会报错，提示 `fatal: bad config line 2 in file C:/Users/WYH/.gitconfig`
 
-   - 如果按照官网，设置 `core.editor "code --wait"`，则会打开旧版本的 VSCode：
+   - 如果按照官网，`core.editor "code --wait"`，则会打开旧版本的 VSCode，怀疑是根据环境配置来打开的：
 
      ```
      Version: 1.32.3 (system setup)
@@ -243,6 +246,12 @@ SSH 协议连接，配置了公钥后，可以免密码推送。
      Node.js: 10.2.0
      V8: 6.6.346.32
      OS: Windows_NT ia32 10.0.19045
+     ```
+
+     因此，本地化修改为：
+
+     ```bash
+     $ git config --global core.editor "'E:\VSCode\Microsoft VS Code\bin\code' --wait"
      ```
 
      
