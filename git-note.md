@@ -9,6 +9,7 @@
 【参考】
 
 - [Git创建本地仓库并推送至Github上（详细步骤）_git remote add "桥梁名称" 桥梁名称是什么-CSDN博客](https://blog.csdn.net/Rao_Limon/article/details/108418233)
+- [Git 一次性 pull push 所有的分支_git push all branch-CSDN博客](https://blog.csdn.net/bingyu9875/article/details/84841521)
 
 # 修改配置
 
@@ -132,6 +133,14 @@ $ git log --graph --oneline --decorate
 - [Git 代码分支管理规范-腾讯云开发者社区-腾讯云 (tencent.com)](https://cloud.tencent.com/developer/article/1592957)
 - [Git 的常规分支使用【dev和master】 - Yogic - 博客园 (cnblogs.com)](https://www.cnblogs.com/yogic/p/12764054.html)
 
+# 删除、回退
+
+【参考】
+
+- [在Git中，如何『删除』commit？_git delete commit-CSDN博客](https://blog.csdn.net/u013553529/article/details/88087047)
+- [Git恢复之前版本的两种方法reset、revert（图文详解）_git回退到某个版本-CSDN博客](https://blog.csdn.net/yxlshk/article/details/79944535)
+- [一文搞懂本地和远程分支代码回退git reset_git reset 远程-CSDN博客](https://blog.csdn.net/eclipse1024/article/details/115220303)
+
 # 其他
 
 ## 操作本地仓库
@@ -185,11 +194,7 @@ SSH 协议连接，配置了公钥后，可以免密码推送。
    - [为什么当我尝试在vscode中提交时，COMMIT_EDITMSG会打开？-腾讯云开发者社区-腾讯云 (tencent.com)](https://cloud.tencent.com/developer/ask/sof/107109436)
    - [git commit命令的使用与git默认编辑器的修改_git: use editor as commit input-CSDN博客](https://blog.csdn.net/longxiaowu/article/details/24017181)
    - 退出 vim 编辑器：[退出 .git/COMMIT_EDITMSG_git commit editmsg-CSDN博客](https://blog.csdn.net/qq_42770949/article/details/104974965)
-<<<<<<< HEAD
 
-=======
-
->>>>>>> bugFix
 4. 输入 `ssh -T git@github.com` 后显示 `git@ip地址: Permission denied (publickey).`
 
    回答：原因可能有：
@@ -295,7 +300,7 @@ SSH 协议连接，配置了公钥后，可以免密码推送。
      设置记事本为编辑器：
 
      ```bash
-    $ git config --global core.editor "'C:\WINDOWS\system32\notepad.exe'"
+      $ git config --global core.editor "'C:\WINDOWS\system32\notepad.exe'"
      ```
      
 
@@ -314,3 +319,7 @@ SSH 协议连接，配置了公钥后，可以免密码推送。
    【参考】[git的分支一直显示megeing • Worktile社区](https://worktile.com/kb/ask/285175.html)
 
    按顺序 `git add xxx`，`git commit`
+
+9. Github 仓库创建时自动 commit 了一次，导致后续 push 时发生冲突
+
+   【参考】[error: failed to push some refs to如何解决-CSDN博客](https://blog.csdn.net/qq_45893999/article/details/106273214)
