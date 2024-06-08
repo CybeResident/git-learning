@@ -36,6 +36,28 @@
 
 - [git教程1--如何操作本地仓库（保姆级教程，好上手）_gitlab-ce 本地仓库操作-CSDN博客](https://blog.csdn.net/TroyeSivanlp/article/details/121172010)
 
+
+
+## 操作远程仓库
+
+【参考】
+
+- [git教程2--远程仓库中的操作（保姆级教程，好上手)_gitlab保姆级教程-CSDN博客](https://blog.csdn.net/TroyeSivanlp/article/details/121173204)
+
+### SSH 协议与 HTTPS 协议
+
+【参考】
+
+- [论git中使用https和ssh协议的区别 (cuiyongjian.com)](https://blog.cuiyongjian.com/engineering/git-https-ssh/)
+- [【git】git中使用https和ssh协议的区别以及它们的用法 - WANNANANANA - 博客园 (cnblogs.com)](https://www.cnblogs.com/wannananana/p/12059806.html)
+
+SSH 协议连接，配置了公钥后，可以免密码推送。
+
+### 重命名仓库
+
+【参考】[Git系列：如何重命名仓库，并同步远程仓库_git如何修改本地仓库名并与远程仓库建立连接-CSDN博客](https://blog.csdn.net/dbc_121/article/details/103422937)
+
+>>>>>>> Stashed changes
 # 问题
 
 1. 新创建仓库，git bash 中输入 `git branch`，为何不显示任何分支？
