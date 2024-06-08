@@ -149,6 +149,8 @@ $ git log --graph --oneline --decorate
 
 - [git教程1--如何操作本地仓库（保姆级教程，好上手）_gitlab-ce 本地仓库操作-CSDN博客](https://blog.csdn.net/TroyeSivanlp/article/details/121172010)
 
+
+
 ## 操作远程仓库
 
 【参考】
@@ -160,7 +162,8 @@ $ git log --graph --oneline --decorate
 【参考】
 
 - [论git中使用https和ssh协议的区别 (cuiyongjian.com)](https://blog.cuiyongjian.com/engineering/git-https-ssh/)
-- [【git】git中使用https和ssh协议的区别以及它们的用法 - WANNANANANA - 博客园 (cnblogs.com)](https://www.cnblogs.com/wannananana/p/12059806.html#:~:text=HTTPS利于匿名访问，适合开源项目，可以方便被别人克隆和读取,(但没有push权限)； SSH不利于匿名访问，比较适合内部项目，只要配置了SSH公钥极可自由实现clone和push操作。)
+
+- [【git】git中使用https和ssh协议的区别以及它们的用法 - WANNANANANA - 博客园 (cnblogs.com)](https://www.cnblogs.com/wannananana/p/12059806.html)
 
 SSH 协议连接，配置了公钥后，可以免密码推送。
 
