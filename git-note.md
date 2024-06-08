@@ -33,7 +33,37 @@
 - [git修改分支名称_git 修改分支名-CSDN博客](https://blog.csdn.net/weixin_49343190/article/details/121924241)
 - [如何在 Git 中重命名本地或远程分支 (freecodecamp.org)](https://www.freecodecamp.org/chinese/news/how-to-rename-a-local-or-remote-branch-in-git)
 
+1. 本地分支重命名(还没有推送到远程) 
 
+   `git branch -m oldName newName`
+
+2. 远程分支重命名 (已经推送远程-假设本地分支和远程对应分支名称相同) 
+
+   a. 重命名远程分支对应的本地分支 
+
+   `git branch -m oldName newName`
+
+   b. 删除远程分支 
+
+   `git push --delete origin oldName`
+
+   c. 上传新命名的本地分支 
+
+   `git push origin newName`
+
+   d. 把修改后的本地分支与远程分支关联
+
+   `git branch --set-upstream-to origin/newName`
+
+   注意：如果本地分支已经关联了远程分支，需要先解除原先的关联关系：
+
+   `git branch --unset-upstream`
+
+### 修改初始化的默认分支名
+
+【参考】[如何配置 git init 的默认分支名 - 掘金 (juejin.cn)](https://juejin.cn/post/7065876657009066014)
+
+执行 **`git config --global init.defaultBranch main`**
 
 # 切换分支而不改变本地代码
 
@@ -124,6 +154,10 @@ $ git log --graph --oneline --decorate
 - [【git】git中使用https和ssh协议的区别以及它们的用法 - WANNANANANA - 博客园 (cnblogs.com)](https://www.cnblogs.com/wannananana/p/12059806.html#:~:text=HTTPS利于匿名访问，适合开源项目，可以方便被别人克隆和读取,(但没有push权限)； SSH不利于匿名访问，比较适合内部项目，只要配置了SSH公钥极可自由实现clone和push操作。)
 
 SSH 协议连接，配置了公钥后，可以免密码推送。
+
+### 重命名仓库
+
+【参考】[Git系列：如何重命名仓库，并同步远程仓库_git如何修改本地仓库名并与远程仓库建立连接-CSDN博客](https://blog.csdn.net/dbc_121/article/details/103422937)
 
 # 问题
 
@@ -261,7 +295,7 @@ SSH 协议连接，配置了公钥后，可以免密码推送。
      设置记事本为编辑器：
 
      ```bash
-  $ git config --global core.editor "'C:\WINDOWS\system32\notepad.exe'"
+    $ git config --global core.editor "'C:\WINDOWS\system32\notepad.exe'"
      ```
      
 
@@ -274,3 +308,9 @@ SSH 协议连接，配置了公钥后，可以免密码推送。
 
    - [git Stash详细介绍：git stash和git pop的详细用法 - 李帆同学 - 博客园 (cnblogs.com)](https://www.cnblogs.com/lifan-fineDay/p/16960584.html)
    - 冲突时的处理：[git stash和git stash pop-CSDN博客](https://blog.csdn.net/qq_36898043/article/details/79431168)
+
+8. 执行 `git merge xxx` 后一直显示 `xxx|MERGING`（正在合并）
+
+   【参考】[git的分支一直显示megeing • Worktile社区](https://worktile.com/kb/ask/285175.html)
+
+   按顺序 `git add xxx`，`git commit`
