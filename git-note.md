@@ -26,7 +26,6 @@
 
 - 官方文档：[Git - git-log Documentation](https://git.github.io/git-scm.com/docs/git-log/zh_HANS-CN)
 - [git log 使用及格式化参数详解_git log format-CSDN博客](https://blog.csdn.net/u011106915/article/details/105836289)
-- [高级 Git 日志 | Atlassian Git Tutorial](https://www.atlassian.com/zh/git/tutorials/git-log)
 
 ### 图
 
@@ -53,13 +52,18 @@ git log --graph --oneline --decorate
 
 虽然对于简单的存储库来说，这是一个不错的选择，但对于分支较多的项目，最好使用功能更全的可视化工具，比如 `gitk` 或 [Sourcetree](https://www.atlassian.com/zh/software/sourcetree)。
 
+# 合并冲突
+
+【参考】
+
+- [使用命令行解决合并冲突 - GitHub 文档](https://docs.github.com/zh/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-using-the-command-line)
+- [如何解决 Git 中的合并冲突 (freecodecamp.org)](https://www.freecodecamp.org/chinese/news/resolve-merge-conflicts-in-git-a-practical-guide/)
+
 # 其他
 
 ## 操作本地仓库
 
-【参考】
-
-- [git教程1--如何操作本地仓库（保姆级教程，好上手）_gitlab-ce 本地仓库操作-CSDN博客](https://blog.csdn.net/TroyeSivanlp/article/details/121172010)
+【参考】[git教程1--如何操作本地仓库（保姆级教程，好上手）_gitlab-ce 本地仓库操作-CSDN博客](https://blog.csdn.net/TroyeSivanlp/article/details/121172010)
 
 # 问题
 
@@ -69,7 +73,16 @@ git log --graph --oneline --decorate
 
    【参考】[git branch不显示本地分支的问题（二）_git branch -a没反应-CSDN博客](https://blog.csdn.net/qq_39671159/article/details/81261049)
 
-2. 输入 `git commit` 后回车，为什么会打开 `COMMIT_EDITMSG` 文件？
+2. `git commit` 后显示 Author identity unknown
+
+   回答：需要设置 git 的用户名和邮箱，设置本地的或全局的：
+
+   - 设置邮箱：`git config --global 或 --local user.email`
+   - 设置用户名：同上，最后一项换成 `user.name`
+
+   【参考】[git使用commit命令后显示Author identity unknown的解决方法_unrecognized commit author in-CSDN博客](https://blog.csdn.net/qq_46036214/article/details/116275598)
+
+3. 输入 `git commit` 后回车，为什么会打开 `COMMIT_EDITMSG` 文件？
 
    回答： git 的设置，该文件用来保存本次 commit 的信息、说明，等同于执行 `git commit -m`。打开 `COMMIT_EDITMSG` 的软件由 git 的 config 文件中的 `core.editor` 指定。
 
