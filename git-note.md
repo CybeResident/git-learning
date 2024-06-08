@@ -10,7 +10,21 @@
 
 - [Git创建本地仓库并推送至Github上（详细步骤）_git remote add "桥梁名称" 桥梁名称是什么-CSDN博客](https://blog.csdn.net/Rao_Limon/article/details/108418233)
 
-# 修改全局属性
+# 修改配置
+
+## 全局配置
+
+### 配置文件路径
+
+【参考】[Window下Git的配置文件路径_git system配置文件路径-CSDN博客](https://blog.csdn.net/qq_28204343/article/details/109826754)
+
+**`C:/User/Administor/.gitconfig`**
+
+### 修改 core.editor
+
+【参考】[Git - 配置 Git (git-scm.com)](https://git-scm.com/book/zh/v2/自定义-Git-配置-Git#_core_editor)
+
+作用：指定默认编辑器，用来编辑提交信息。
 
 ## 修改分支名
 
@@ -18,6 +32,8 @@
 
 - [git修改分支名称_git 修改分支名-CSDN博客](https://blog.csdn.net/weixin_49343190/article/details/121924241)
 - [如何在 Git 中重命名本地或远程分支 (freecodecamp.org)](https://www.freecodecamp.org/chinese/news/how-to-rename-a-local-or-remote-branch-in-git)
+
+
 
 # 切换分支而不改变本地代码
 
@@ -185,6 +201,8 @@ SSH 协议连接，配置了公钥后，可以免密码推送。
 
    3. 打开 SSH 代理
 
+      【参考】[生成新的 SSH 密钥并将其添加到 ssh-agent - GitHub 文档](https://docs.github.com/zh/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent)
+
       将这个 key 添加到ssh-agent中：
 
       ```bash
@@ -206,10 +224,9 @@ SSH 协议连接，配置了公钥后，可以免密码推送。
       - 成功解决：[（诊断）为GitHub添加SSH key时出现“Could not open a connection to your authentication agent”错误的应对方案。 - 王智愚 - 博客园 (cnblogs.com)](https://www.cnblogs.com/Security-Darren/p/4106328.html)
       - [ssh公钥问题（Could not open a connection to your authentication agent.）-CSDN博客](https://blog.csdn.net/benisarookie/article/details/113114604)
 
-      
+6. 关联文本编辑器与 Git
 
-   【参考】
+   【参考】[关联文本编辑器与 Git - GitHub 文档](https://docs.github.com/zh/get-started/getting-started-with-git/associating-text-editors-with-git)
 
-   - [生成新的 SSH 密钥并将其添加到 ssh-agent - GitHub 文档](https://docs.github.com/zh/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent)
+   **【注意】**如果手动修改 `.gitconfig` 文件，git 会报错，提示 `fatal: bad config line 2 in file C:/Users/WYH/.gitconfig`
 
-     
