@@ -257,7 +257,7 @@ SSH 协议连接，配置了公钥后，可以免密码推送。
      设置记事本为编辑器：
 
      ```bash
-     $ git config --global core.editor "'C:/WINDOWS/system32/notepad.exe'"
+     
      ```
 
      
