@@ -59,11 +59,27 @@ git log --graph --oneline --decorate
 - [使用命令行解决合并冲突 - GitHub 文档](https://docs.github.com/zh/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-using-the-command-line)
 - [如何解决 Git 中的合并冲突 (freecodecamp.org)](https://www.freecodecamp.org/chinese/news/resolve-merge-conflicts-in-git-a-practical-guide/)
 
+# 分支管理规范
+
+【参考】
+
+- [Git 分支管理规范 | 前端规范 (woai3c.github.io)](https://woai3c.github.io/front-end-specification/git.html#git-分支管理规范)
+- [Git 代码分支管理规范-腾讯云开发者社区-腾讯云 (tencent.com)](https://cloud.tencent.com/developer/article/1592957)
+- [Git 的常规分支使用【dev和master】 - Yogic - 博客园 (cnblogs.com)](https://www.cnblogs.com/yogic/p/12764054.html)
+
 # 其他
 
 ## 操作本地仓库
 
-【参考】[git教程1--如何操作本地仓库（保姆级教程，好上手）_gitlab-ce 本地仓库操作-CSDN博客](https://blog.csdn.net/TroyeSivanlp/article/details/121172010)
+【参考】
+
+- [git教程1--如何操作本地仓库（保姆级教程，好上手）_gitlab-ce 本地仓库操作-CSDN博客](https://blog.csdn.net/TroyeSivanlp/article/details/121172010)
+
+## 操作远程仓库
+
+【参考】
+
+- [git教程2--远程仓库中的操作（保姆级教程，好上手)_gitlab保姆级教程-CSDN博客](https://blog.csdn.net/TroyeSivanlp/article/details/121173204)
 
 # 问题
 
