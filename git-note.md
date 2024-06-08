@@ -1,3 +1,9 @@
+# 推送至 Github
+
+【参考】
+
+- [Git创建本地仓库并推送至Github上（详细步骤）_git remote add "桥梁名称" 桥梁名称是什么-CSDN博客](https://blog.csdn.net/Rao_Limon/article/details/108418233)
+
 # 修改全局属性
 
 ## 修改分支名
@@ -6,6 +12,22 @@
 
 - [git修改分支名称_git 修改分支名-CSDN博客](https://blog.csdn.net/weixin_49343190/article/details/121924241)
 - [如何在 Git 中重命名本地或远程分支 (freecodecamp.org)](https://www.freecodecamp.org/chinese/news/how-to-rename-a-local-or-remote-branch-in-git)
+
+
+
+# 切换分支而不改变本地代码
+
+【参考】
+
+- [git 学习笔记 —— 保留/丢弃当前分支修改并切换至其他分支 - yhjoker - 博客园 (cnblogs.com)](https://www.cnblogs.com/yhjoker/p/11776240.html)
+- [git切换分支后，本地代码会改变吗_git checkout后 本地代码没变-CSDN博客](https://blog.csdn.net/weixin_45813802/article/details/129200139)
+
+# 打印日志
+
+【参考】
+
+- 官方文档：[Git - git-log Documentation](https://git.github.io/git-scm.com/docs/git-log/zh_HANS-CN)
+- [git log 使用及格式化参数详解_git log format-CSDN博客](https://blog.csdn.net/u011106915/article/details/105836289)
 
 # 问题
 
